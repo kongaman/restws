@@ -2,7 +2,7 @@ package com.bharath.restws.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name="Patient")
+@XmlRootElement(name="Patient") // JAXB anntoation -> can be serialized and deserialized into xml and back to java object
 public class Patient {
 
 	private long id;
