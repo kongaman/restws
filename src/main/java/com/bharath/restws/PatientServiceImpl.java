@@ -34,4 +34,9 @@ public class PatientServiceImpl implements PatientService {
 		return response;
 	}
 
+	@Override
+	public Patient getPatient(Long id) {
+		return patients.get(id);
+	}
+
 }
