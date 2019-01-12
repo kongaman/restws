@@ -1,5 +1,8 @@
 package com.bharath.restws.model;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name="Patient")
 public class Patient {
 
 	private long id;
