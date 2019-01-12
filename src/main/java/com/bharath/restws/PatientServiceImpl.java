@@ -25,15 +25,12 @@ public class PatientServiceImpl implements PatientService {
 		patient.setId(currentId);
 		patient.setName("John");
 		patients.put(patient.getId(), patient);
-		
 	}
 
 	@Override
 	public List<Patient> getPatients() {
-
 		Collection<Patient> results = patients.values();
 		List<Patient> response = new ArrayList<>(results);
-		
 		return response;
 	}
 
