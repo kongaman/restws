@@ -31,6 +31,10 @@ public interface PatientService {
 	@PUT
 	Response updatePatient(Patient patient);
 	
+	@Path("/patients/{id}") // {id} = Path-Variable will be bound to "(Long id)" on next line because of the @PathParam annotation
+							// keyword "value" is not mandatory in PathParam because its the default
+	@DELETE
+	Response deletePatient(@PathParam("id") Long id);
 
 
 }
