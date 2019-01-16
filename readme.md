@@ -1,5 +1,5 @@
 # Rest-WebService Screenshots
-## Spring Boot, Apache-CXF, Postman
+##  - Spring Boot, Apache-CXF, Postman - 
 Basic REST Webservice for a hospital to Create, Read, Update and Delete patients
 
 ## Test of GET, POST, PUT und DELETE in Postman with XML dataformat
@@ -24,17 +24,23 @@ Make sure to have dataformat set to "application/XML" in the "Body"-Tab
 
 ### GET
 Make sure to add the Key "Accept" with value "application/json" in the "Headers"-Tab
-![Get all patients](docs/postman-json.png)
+![JSON Get all patients](docs/postman-json.png)
 
 ### POST
 Make sure to add the Key "Accept" with value "application/json" in the "Headers"-Tab
 AND set the dataformat to "application/json" in the "Body"-Tab
-![Get all patients](docs/postman-json-post.png)
+![JSON Create a patient](docs/postman-json-post.png)
 <br><br>
 
 If you don't set the Key "Accept" with value "application/json" you will send json and get
 XML in return ;-)
-![Get all patients](docs/postman-json-xml.png)
+![JSON XML mixed](docs/postman-json-xml.png)
+<br><br>
+
+## Errorhandling
+
+### Custom error message
+![custom errormessage](docs/postman-json-errormessage.png)
 
 
 
