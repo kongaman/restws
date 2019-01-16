@@ -12,6 +12,7 @@ import javax.ws.rs.core.Response;
 
 import org.springframework.stereotype.Service;
 
+import com.bharath.restws.exceptions.PatientBusinessException;
 import com.bharath.restws.model.Patient;
 
 @Service     //Spring annotation so that Spring will discover this bean at runtime 
@@ -63,7 +64,8 @@ public class PatientServiceImpl implements PatientService {
 			patients.put(patient.getId(), patient);
 			response = Response.ok().build();
 		} else {
-			response = Response.notModified().build();
+			//response = Response.notModified().build();
+			throw new PatientBusinessException();
 		}
 		
 		return response;
